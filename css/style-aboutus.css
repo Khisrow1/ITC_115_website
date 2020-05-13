@@ -63,6 +63,12 @@ body {
 
 }
 
+table {
+    margin: 0 auto;
+    border: 2px solid var(--tertairy-color);
+    border-spacing: 10px;
+}
+
 .prompt-header {
     align-self: center;
     justify-self: center;

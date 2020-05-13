@@ -32,8 +32,19 @@ $(document).ready(() => {
         if (hasBeenFocused) {
             $('.feedback-section').html('');
             $('.feedback-section').append(`
-            <h1>All Done!</h1>
-            <h4 style="padding-top: 5rem; color: antiquewhite; font-family:  'Ubuntu', sans-serif;">Thank you for you feedback! we really appreciate it</h4>`);
+            <h1>There are great helpers out there!</h1>
+            <table style="margin-top: 3rem;">
+            <tr style="margin-bottom: 2rem;">
+                <th>Num. people</th>
+                <th>Donation</th>
+                <th>Tree Saved</th>
+            </tr>
+            <tr>
+                <td>23,00</td>
+                <td>86,000$</td>
+                <td>2,000</td>
+            </tr>
+        </table>`);
         }
     });
 

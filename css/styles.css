@@ -90,8 +90,8 @@ body {
 .aboutus-hover {
     top: 0;
     right: 0;
-    width: calc(100vw/8);
-    height: calc(100vh/8);
+    width: calc(100vw/7);
+    height: calc(100vh/7);
     position: fixed;
 }
 
@@ -99,8 +99,8 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    width: calc(100vw/8);
-    height: calc(100vh/8);
+    width: calc(100vw/7);
+    height: calc(100vh/7);
 }
 .main {
     display: grid;
@@ -142,6 +142,19 @@ body {
     blinkCursor 350ms steps(38) infinite normal;
 }
 
+.p-heading1 {
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.2;
+    position: relative;
+    width: 0;
+    font-size: 1.2rem;
+    animation: pHeadingWrite 3s steps(55) 7s 1 normal forwards,
+    blinkCursor 350ms steps(38) infinite normal;
+}
+
 @keyframes mainHeadingWrite {
     from {
         width: 0;
@@ -167,7 +180,7 @@ body {
     }
 
     to {
-        width: 37.4rem;
+        width: 25.7rem;
         border-right: 4px solid var(--quaternary-color);
     }
 }

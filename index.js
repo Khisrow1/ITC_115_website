@@ -45,6 +45,12 @@ $(document).ready(() => {
         $('.game-on').click(()=> {
             gameCounter++;
 
+            if (gameCounter==1) {
+                setTimeout(()=>{
+                    gameCounter=0;
+                }, 5000)
+            }
+
             if (gameCounter==3) {
                 gameCounter=0;
                 window.location.replace('hidden_game.html');
