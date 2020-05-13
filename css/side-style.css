@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #323232;
+    --tertairy-color: #ff1e56;
+    --quaternary-color: #ffac41;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(242, 242, 242, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--tertairy-color);
+    border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tertairy-color);
+}
+
+::-moz-selection {
+    color: var(--primary-color);
+    background: var(--quaternary-color);
+}
+
+::selection {
+    color: var(--primary-color);
+    background: var(--quaternary-color);
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    scroll-behavior: smooth;
+}
+
+/* Tags */
+body {
+    background-color: var(--primary-color);
+    font-family: 'Staatliches', cursive;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    animation: overflow .001s ease 2.8s 1 normal forwards;
+}
+
+a {
+    cursor: context-menu;
+}
+
+@keyframes overflow  {
+    99% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: scroll;
+    }
+}
+
+.prompt {
+    display: grid;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    animation: slideUp .7s ease 2.1s 1 normal forwards;
+}
+
+@keyframes slideUp {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 8rem;
+        position: absolute;
+    }
+}
+
+.prompt-header {
+    align-self: center;
+    justify-self: center;
+    line-height: 1;
+    color: var(--tertairy-color);
+    font-size: 90px;
+    padding-right: 0;
+    padding-left: .4rem;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    border-right: 6px solid var(--quaternary-color);
+    animation: headingWrite 1s steps(14) 1s 1 normal forwards,
+        blinkCursor 350ms steps(38) infinite normal;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: var(--quaternary-color);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.scroll-top {
+    color: var(--tertairy-color);
+    font-size: 2rem;
+    z-index: 11;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+    transition: background-color .3s, transform .3s;
+}
+
+.scroll-top:hover {
+    background-color: var(--quaternary-color);
+    transform: scale(1.1);
+}
+
+.backbtn {
+    z-index: 20;
+    top: 1.8rem;
+    left: 50%;
+    position: absolute;
+    color: transparent;
+    animation: slideLeft .5s ease 2.4s 1 normal forwards;
+    transition: transform .3s;
+}
+
+.backbtn:hover {
+    transform: scale(1.2);
+}
+
+@keyframes slideLeft {
+    from {
+        left : 50%
+    }
+    20% {
+        color: transparent;
+    }
+    to {
+        color: var(--tertairy-color);
+        left: 1rem;
+    }
+}
+
+.external-read {
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 20;
+    position: absolute;
+    top: calc(5rem/2);
+    right: 2rem;
+    color: var(--tertairy-color);
+    padding: .6rem 1rem;
+    color: transparent;
+    background-color: transparent;
+    border-radius: .5rem;
+    transition: background-color .3s, color .3s, transform .3s;
+    animation: slideRight .5s ease 2.4s 1 normal forwards;
+}
+
+@keyframes slideRight {
+    from {
+        right : 50%
+    }
+
+    to {
+        color: var(--tertairy-color);
+        right: 2rem;
+    }
+}
+
+.external-read:hover {
+    transform: scale(1.4);
+    background-color: var(--quaternary-color);
+}
+
+.main-content {
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    display: grid;
+    padding: 0;
+    margin: 0rem 0;
+    /* border: 3px solid white; */
+    justify-content: center;
+}
+
+.main-text {
+    background-color: var(--primary-color);
+    margin: 100vh 0 0 0;
+    padding: 3rem 6rem;
+    color: var(--tertairy-color)
+}
+
+.header {
+    color: var(--tertairy-color);
+    text-align: center;
+    font-size: 60px;
+    padding: 2rem 0 4rem 0;
+}
+
+.paragraph {
+    letter-spacing: 1px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #f8f3eb;
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1050px) {
+
+    .main-content {
+        background-size: auto;
+    }
+
+    .external-read {
+        top: 10rem;
+        right: -50%;
+        color: aliceblue;
+        background-color: var(--quaternary-color);
+    }
+
+    @keyframes slideRight {
+        from {
+            right : -50%
+        }
+    
+        to {
+            color: var(--tertairy-color);
+            right: 2rem;
+        }
+    }
+    .backbtn {
+        z-index: 20;
+        top: 10rem;
+        left: -50%;
+        animation: slideLeft .5s ease 2.4s 1 normal forwards;
+        transition: transform .3s;
+    }
+
+    @keyframes slideLeft {
+        from {
+            left : -50%
+        }
+        20% {
+            color: transparent;
+        }
+        to {
+            color: var(--tertairy-color);
+            left: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .main-text {
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+
+    .main-content {
+        background-size: 100%;
+    }
+}

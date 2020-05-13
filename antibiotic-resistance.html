@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/side-style.css">
+    <link rel="stylesheet" href="css/globalwarming-header-anim.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <title>Antibiotic Resistance</title>
+</head>
+
+<style>
+    .prompt-header {
+        align-self: center;
+        justify-self: center;
+        line-height: 1;
+        color: var(--tertairy-color);
+        font-size: 90px;
+        padding-right: 0;
+        padding-left: .4rem;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        width: 0;
+        border-right: 6px solid var(--quaternary-color);
+        animation: headingWrite 1s steps(21) 1s 1 normal forwards,
+            blinkCursor 350ms steps(38) infinite normal;
+    }
+
+    @keyframes headingWrite {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 45.5rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="prompt" id="top">
+        <h1 class="prompt-header">Antibiotic Resistance</h1>
+    </div>
+    <i class="fas fa-arrow-left fa-4x backbtn" onclick="window.location.replace('index.html')"></i>
+    <a href="https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance" target="_blank" class="external-read">Read more</a>
+    <a href="#top"><i class="fas fa-arrow-up fa-4x scroll-top"></i></a>
+
+    <div class="main-content" style="background-image: url('assets/img/antibiotic-resistance/first.jpg');">
+        <div class="main-text">
+            <h1 class="header">Life is scary without antibiotics.</h1>
+            <p class="paragraph">
+                Antibiotics are medicines used to prevent and treat bacterial infections. Antibiotic resistance occurs
+                when bacteria change in response to the use of these medicines.
+                Bacteria, not humans or animals, become antibiotic-resistant. These bacteria may infect humans and
+                animals, and the infections they cause are harder to treat than those caused by non-resistant bacteria.
+                Antibiotic resistance leads to higher medical costs, prolonged hospital stays, and increased mortality.
+                The world urgently needs to change the way it prescribes and uses antibiotics. Even if new medicines are
+                developed, without behaviour change, antibiotic resistance will remain a major threat. Behaviour changes
+                must also include actions to reduce the spread of infections through vaccination, hand washing,
+                practising safer sex, and good food hygiene.
+            </p>
+            <p class="paragraph">
+                Antibiotic resistance is rising to dangerously high levels in all parts of the world. New resistance
+                mechanisms are emerging and spreading globally, threatening our ability to treat common infectious
+                diseases. A growing list of infections – such as pneumonia, tuberculosis, blood poisoning, gonorrhoea,
+                and foodborne diseases – are becoming harder, and sometimes impossible, to treat as antibiotics become
+                less effective.
+                Where antibiotics can be bought for human or animal use without a prescription, the emergence and spread
+                of resistance is made worse. Similarly, in countries without standard treatment guidelines, antibiotics
+                are often over-prescribed by health workers and veterinarians and over-used by the public.
+                Without urgent action, we are heading for a post-antibiotic era, in which common infections and minor
+                injuries can once again kill.
+            </p>
+        </div>
+    </div>
+    <div class="main-content" style="background-image: url('assets/img/antibiotic-resistance/second.png');">
+        <div class="main-text">
+            <h1 class="header">It is the end of modern medicine.</h1>
+            <p class="paragraph">
+                Antimicrobial resistance (AMR or AR) is the ability of a microbe to resist the effects of medication
+                that once could successfully treat the microbe. The term antibiotic resistance (AR or ABR) is a
+                subset of AMR, as it applies only to bacteria becoming resistant to antibiotics. Resistant microbes
+                are more difficult to treat, requiring alternative medications or higher doses of antimicrobials. These
+                approaches may be more expensive, more toxic or both. Microbes resistant to multiple antimicrobials are
+                called multidrug resistant (MDR). Those considered extensively drug resistant (XDR) or totally
+                drug-resistant (TDR) are sometimes called "superbugs".
+            </p>
+            <p class="paragraph">
+                Resistance arises through one of three mechanisms: natural resistance in certain types of bacteria,
+                genetic mutation, or by one species acquiring resistance from another. All classes of microbes can
+                develop resistance. Fungi develop antifungal resistance. Viruses develop antiviral resistance. Protozoa
+                develop antiprotozoal resistance, and bacteria develop antibiotic resistance. Resistance can appear
+                spontaneously because of random mutations. However, extended use of antimicrobials appears to encourage
+                selection for mutations which can render antimicrobials ineffective.
+            </p>
+            <p class="paragraph">
+                Rising drug resistance is caused mainly by use of antimicrobials in humans and other animals, and spread
+                of resistant strains between the two. Growing resistance has also been linked to dumping of
+                inadequately treated effluents from the pharmaceutical industry, especially in countries where bulk
+                drugs are manufactured. Antibiotics increase selective pressure in bacterial populations, causing
+                vulnerable bacteria to die; this increases the percentage of resistant bacteria which continue growing.
+                Even at very low levels of antibiotic, resistant bacteria can have a growth advantage and grow faster
+                than vulnerable bacteria. With resistance to antibiotics becoming more common there is greater need
+                for alternative treatments. Calls for new antibiotic therapies have been issued, but new drug
+                development is becoming rarer.
+            </p>
+        </div>
+    </div>
+    <div class="main-content" style="background-image: url('assets/img/antibiotic-resistance/third.jpg');">
+        <div class="main-text">
+            <h1 class="header">We are being reckless.</h1>
+            <p class="paragraph">
+                Self medication by consumers is defined as “the taking of medicines on one's own initiative or on
+                another person's suggestion, who is not a certified medical professional”, and it has been identified as
+                one of the primary reasons for the development of antimicrobial resistance. In an effort to manage
+                their own illness, patients take the advice of false media sources, friends, and family causing them to
+                take antimicrobials unnecessarily or in excess. Many people resort to this out of necessity, when they
+                have a limited amount of money to see a doctor, or in many developing countries a poorly developed
+                economy and lack of doctors are the cause of self-medication. In these developing countries, governments
+                resort to allowing the sale of antimicrobials as over the counter medications so people could have
+                access to them without having to find or pay to see a medical professional. This increased access
+                makes it extremely easy to obtain antimicrobials without the advice of a physician, and as a result many
+                antimicrobials are taken incorrectly leading to resistant microbial strains. One major example of a
+                place that faces these challenges is India, where in a state called Punjab 73% of the population
+                resorted to treating their minor health issues and chronic illnesses through self-medication.
+            </p>
+            <p class="paragraph">
+                The major issue with self-medication is the lack of knowledge of the public on the dangerous effects of
+                antimicrobial resistance, and how they can contributing to it through mistreating or misdiagnosing
+                themselves. In order to determine the public's knowledge and preconceived notions on antibiotic
+                resistance, a major type of antimicrobial resistance, a screening of 3537 articles published in Europe,
+                Asia, and North America was done. Of the 55,225 total people surveyed, 70% had heard of antibiotic
+                resistance previously, but 88% of those people thought it referred to some type of physical change in
+                the body. With so many people around the world with the ability to self-medicate using antibiotics,
+                and a vast majority unaware of what antimicrobial resistance is, it makes the increase of antimicrobial
+                resistance much more likely.
+            </p>
+            <p class="paragraph">
+                Clinical misuse by healthcare professionals is another cause leading to increased antimicrobial
+                resistance. Studies done by the CDC show that the indication for treatment of antibiotics, choice of the
+                agent used, and the duration of therapy was incorrect in up to 50% of the cases studied. In another
+                study done in an intensive care unit in a major hospital in France, it was shown that 30% to 60% of
+                prescribed antibiotics were unnecessary. These inappropriate uses of antimicrobial agents promote
+                the development of antimicrobial resistance by supporting the bacteria in developing genetic alterations
+                that lead to resistance. In a study done by the American Journal of Infection Control
+                aimed to evaluate physicians’ attitudes and knowledge on antimicrobial resistance in ambulatory
+                settings, only 63% of those surveyed reported antibiotic resistance as a problem in their local
+                practices, while 23% reported the aggressive prescription of antibiotics as necessary to avoid failing
+                to provide adequate care. This demonstrates how a majority of doctors underestimate the impact that
+                their own prescribing habits have on antimicrobial resistance as a whole. It also confirms that some
+                physicians may be overly cautious when it comes to prescribing antibiotics for both medical or legal
+                reasons, even when indication for use for these medications is not always confirmed. This can lead to
+                unnecessary antimicrobial use.
+            </p>
+        </div>
+    </div>
+    <div class="main-content" style="background-image: url('assets/img/antibiotic-resistance/fourth.jpg');">
+        <div class="main-text">
+            <h1 class="header">Can it be prevented?</h1>
+            <p class="paragraph">
+                There have been increasing public calls for global collective action to address the threat, including a
+                proposal for international treaty on antimicrobial resistance. Further detail and attention is still
+                needed in order to recognize and measure trends in resistance on the international level; the idea of a
+                global tracking system has been suggested but implementation has yet to occur. A system of this nature
+                would provide insight to areas of high resistance as well as information necessary for evaluating
+                programs and other changes made to fight or reverse antibiotic resistance.
+            </p>
+            <p class="paragraph">
+                Antibiotic stewardship programmes appear useful in reducing rates of antibiotic resistance. The
+                antibiotic stewardship program will also provide pharmacists with the knowledge to educate patients that
+                antibiotics will not work for a virus.
+                Excessive antibiotic use has become one of the top contributors to the development of antibiotic
+                resistance. Since the beginning of the antibiotic era, antibiotics have been used to treat a wide range
+                of disease. Overuse of antibiotics has become the primary cause of rising levels of antibiotic
+                resistance. The main problem is that doctors are willing to prescribe antibiotics to ill-informed
+                individuals who believe that antibiotics can cure nearly all illnesses, including viral infections like
+                the common cold. In an analysis of drug prescriptions, 36% of individuals with a cold or an upper
+                respiratory infection (both viral in origin) were given prescriptions for antibiotics. These
+                prescriptions accomplished nothing other than increasing the risk of further evolution of antibiotic
+                resistant bacteria.
+            </p>
+            <p class="paragraph">
+                Infectious disease control through improved water, sanitation and hygiene (WASH) infrastructure needs to
+                be included in the antimicrobial resistance (AMR) agenda. The "Interagency Coordination Group on
+                Antimicrobial Resistance" stated in 2018 that "the spread of pathogens through unsafe water results in a
+                high burden of gastrointestinal disease, increasing even further the need for antibiotic treatment."
+                This is particularly a problem in developing countries where the spread of infectious diseases caused by
+                inadequate WASH standards is a major driver of antibiotic demand. Growing usage of antibiotics
+                together with persistent infectious disease levels have led to a dangerous cycle in which reliance on
+                antimicrobials increases while the efficacy of drugs diminishes. The proper use of infrastructure
+                for water, sanitation and hygiene (WASH) can result in a 47–72 percent decrease of diarrhea cases
+                treated with antibiotics depending on the type of intervention and its effectiveness. A reduction of
+                the diarrhea disease burden through improved infrastructure would result in large decreases in the
+                number of diarrhea cases treated with antibiotics. This was estimated as ranging from 5 million in
+                Brazil to up to 590 million in India by the year 2030. The strong link between increased consumption
+                and resistance indicates that this will directly mitigate the accelerating spread of AMR. Sanitation
+                and water for all by 2030 is Goal Number 6 of the Sustainable Development Goals.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            $('*').scrollTop(0);
+
+        }, 800);
+
+        btn = document.getElementsByClassName("scroll-top")[0];
+
+        window.onscroll = function () {
+
+            if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+/* General setting */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #323232;
+    --tertairy-color: #ff1e56;
+    --quaternary-color: #ffac41;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(242, 242, 242, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--tertairy-color);
+    border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tertairy-color);
+}
+
+::-moz-selection {
+    color: var(--primary-color);
+    background: var(--quaternary-color);
+}
+
+::selection {
+    color: var(--primary-color);
+    background: var(--quaternary-color);
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    overflow: hidden;
+}
+
+/* Tags */
+body {
+    color: var(--tertairy-color);
+    background-color: var(--primary-color);
+    font-family: 'Staatliches', cursive;
+
+}
+
+
+/* Classes */
+
+.aboutus-btn {
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 20;
+    position: absolute;
+    top: -3rem;
+    right: 3rem;
+    color: var(--tertairy-color);
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    transition: top .4s, transform .3s, background-color .3s;
+}
+
+.aboutus-btn:hover {
+    transform: scale(1.4);
+    color: var(--secondary-color);
+    background-color: var(--quaternary-color);
+
+}
+
+.aboutus-hover {
+    top: 0;
+    right: 0;
+    width: calc(100vw/8);
+    height: calc(100vh/8);
+    position: fixed;
+}
+
+.game-on {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: calc(100vw/8);
+    height: calc(100vh/8);
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+.headings {
+    align-self: flex-end;
+    justify-self: center;
+    width: 41rem;
+    margin-bottom: 6rem;
+}
+.main-heading {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1;
+    width: 40.7rem;
+    position: relative;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    border-right: 4px solid var(--quaternary-color);
+    animation: mainHeadingWrite 3s steps(38) 1s 1 normal both,
+    blinkCursor 350ms steps(38) infinite normal;
+}
+
+.p-heading {
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.2;
+    position: relative;
+    width: 0;
+    font-size: 1.2rem;
+    animation: pHeadingWrite 3s steps(38) 4.5s 1 normal forwards,
+    blinkCursor 350ms steps(38) infinite normal;
+}
+
+@keyframes mainHeadingWrite {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40.7rem;
+    }
+
+    99.9% {
+    border-right: 4px solid var(--quaternary-color);
+
+    }
+    100% {
+        border-right: none;
+    }
+}
+
+@keyframes pHeadingWrite {
+    from {
+        border-right: 4px solid var(--quaternary-color);
+        width: 0;
+    }
+
+    to {
+        width: 37.4rem;
+        border-right: 4px solid var(--quaternary-color);
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: var(--quaternary-color);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sections {
+    position: relative;
+    margin: 0 2rem 0 2rem;
+}
+
+.section {
+    position: absolute;
+    text-align: center;
+    margin: 2rem 2rem 0 2rem;
+    transition: transform .3s;
+    color: var(--quaternary-color);
+}
+
+.fas {
+    margin-bottom: .7rem;
+    color: var(--tertairy-color);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1018px) {
+
+    .sections {
+        margin: 0 10rem 0 10rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+
+    .sections {
+        margin: 0 20rem 0 20rem;
+    }
+}
+
+@media screen and (min-width: 1515px) {
+
+    .sections {
+        margin: 0 30rem 0 30rem;
+    }
+}
+
